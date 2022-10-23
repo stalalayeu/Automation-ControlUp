@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Tests" verbose="5">
+  <test name="Smoke UI">
+      <classes>
+          <class name="com.controlup.automation.uitest.ExpressTest">
+            <methods>
+        	  <include name="testSimpleNavigation" />
+       	    </methods>
+          </class>
+      </classes>
+  </test>
+  <test name="Smoke API">
+      <classes>
+            <class name="com.controlup.automation.restapi.RestApiTest">
+              <methods>
+        	    <include name="validateWeatherSchema" />
+       	      </methods>
+       	    </class>
+      </classes>
+  </test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OOOverall Regression suite" verbose="5">  <!-- parallel="classes" thread-count="3"> -->
+  <test name="Smoke UI">
+      <classes>
+          <class name="com.controlup.automation.uitest.ExpressTest"/>
+      </classes>
+  </test>
+  <test name="Smoke API">
+      <classes>
+            <class name="com.controlup.automation.restapi.RestApiTest"/>
+      </classes>
+  </test>
+</suite>
